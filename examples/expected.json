@@ -1,0 +1,19 @@
+{
+  "balances": {
+    "alice": 35,
+    "bob": 60
+  },
+  "block_results": [
+    {
+      "coinbase": 100,
+      "fees": 0
+    },
+    {
+      "coinbase": 0,
+      "fees": 5
+    }
+  ],
+  "height": 2,
+  "supply": 95,
+  "utxo_count": 2
+}

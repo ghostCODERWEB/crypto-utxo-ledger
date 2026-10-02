@@ -1,0 +1,43 @@
+{
+  "blocks": [
+    {
+      "subsidy": 100,
+      "transactions": [
+        {
+          "id": "genesis",
+          "inputs": [],
+          "outputs": [
+            {
+              "owner": "alice",
+              "amount": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "transactions": [
+        {
+          "id": "spend",
+          "inputs": [
+            {
+              "txid": "genesis",
+              "index": 0,
+              "owner": "alice"
+            }
+          ],
+          "outputs": [
+            {
+              "owner": "bob",
+              "amount": 60
+            },
+            {
+              "owner": "alice",
+              "amount": 35
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

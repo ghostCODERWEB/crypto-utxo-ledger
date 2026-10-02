@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-utxo-ledger"
+version = "0.1.0"
+description = "Validate synthetic UTXO transactions, conservation, fees, coinbase limits and reversible block application."
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+crypto-utxo-ledger = "cryptolab:main"
+
+[tool.setuptools.packages.find]
+include = ["cryptolab*"]
+
+[tool.setuptools.package-data]
+cryptolab = ["web/*"]
